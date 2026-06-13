@@ -63,8 +63,8 @@ footer{padding:40px;text-align:center;border-top:1px solid #1e392b;color:#9ab1a2
 <div>
 <h1>Smart Waste Management for <span>Smarter Cities</span></h1>
 <p>AI-powered SmartBins with rewards, analytics, solar power and real-time monitoring for municipalities, universities, tourism hubs and smart city projects.</p>
-<a class="btn primary" href="mailto:safaitechh@gmail.com?subject=Request%20Pilot%20Deployment" onclick="return openMail(event,'Request Pilot Deployment')">Request Pilot Deployment</a>
-<a class="btn secondary" href="mailto:safaitechh@gmail.com?subject=Partnership%20Inquiry" onclick="return openMail(event,'Partnership Inquiry')">Partner With Us</a>
+<a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=safaitechh@gmail.com&su=Request%20Pilot%20Deployment" target="_blank" rel="noopener">Request Pilot Deployment</a>
+<a class="btn secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=safaitechh@gmail.com&su=Partnership%20Inquiry" target="_blank" rel="noopener">Partner With Us</a>
 
 <div class="metrics">
 <div class="metric"><h3 class="counter" data-target="18">0</h3><p>Projected SmartBins</p></div>
@@ -115,7 +115,7 @@ footer{padding:40px;text-align:center;border-top:1px solid #1e392b;color:#9ab1a2
 <section id="contact">
 <div class="container" style="text-align:center">
 <h2 class="title">Let's Build Cleaner Cities</h2>
-<a class="btn primary" href="mailto:safaitechh@gmail.com?subject=SafaiTech%20Inquiry" onclick="return openMail(event,'SafaiTech Inquiry')">Schedule Demonstration</a>
+<a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=safaitechh@gmail.com&su=SafaiTech%20Inquiry" target="_blank" rel="noopener">Schedule Demonstration</a>
 </div>
 </section>
 
@@ -123,20 +123,6 @@ footer{padding:40px;text-align:center;border-top:1px solid #1e392b;color:#9ab1a2
 <img src="logo.png" style="height:60px"><br><br>
 © 2026 SafaiTech • Smart Waste. Cleaner Future.
 </footer>
-<script>
-function openMail(e,subject){
-  // On desktop, mailto: often fails silently if no email client is configured.
-  // Open Gmail web compose in a new tab as a reliable fallback for all devices.
-  var isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
-  if(!isMobile){
-    e.preventDefault();
-    var url='https://mail.google.com/mail/?view=cm&fs=1&to=safaitechh@gmail.com&su='+encodeURIComponent(subject);
-    window.open(url,'_blank','noopener');
-    return false;
-  }
-  return true;
-}
-</script>
 <script>
 const counters=document.querySelectorAll('.counter');
 const obs=new IntersectionObserver(entries=>{
