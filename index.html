@@ -2,437 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SafaiTech | Transforming Waste Into Value</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SafaiTech | Smart Waste Management for Smarter Cities</title>
+<link rel="icon" href="logo.png">
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Segoe UI,sans-serif;
-}
-
-body{
-    background:#080808;
-    color:white;
-    line-height:1.6;
-}
-
-nav{
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:100;
-    background:rgba(10,10,10,.95);
-    border-bottom:1px solid #222;
-}
-
-.nav-container{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px;
-}
-
-.logo{
-    font-size:1.5rem;
-    font-weight:700;
-}
-
-.logo span{
-    color:#00d26a;
-}
-
-.nav-links{
-    display:flex;
-    gap:25px;
-}
-
-.nav-links a{
-    color:#ccc;
-    text-decoration:none;
-}
-
-.nav-links a:hover{
-    color:white;
-}
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero-content{
-    max-width:900px;
-}
-
-.hero h1{
-    font-size:4rem;
-    margin-bottom:20px;
-}
-
-.hero span{
-    color:#00d26a;
-}
-
-.hero p{
-    color:#aaa;
-    font-size:1.2rem;
-    margin-bottom:35px;
-}
-
-.btn{
-    padding:14px 28px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:1rem;
-    margin:5px;
-}
-
-.primary{
-    background:#00d26a;
-    color:black;
-    font-weight:bold;
-}
-
-.secondary{
-    background:#151515;
-    color:white;
-    border:1px solid #333;
-}
-
-section{
-    padding:90px 20px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
-}
-
-.section-title{
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:50px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#141414;
-    border:1px solid #252525;
-    border-radius:16px;
-    padding:25px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-.card h3{
-    margin-bottom:12px;
-}
-
-.card p{
-    color:#aaa;
-}
-
-.process{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:30px;
-    text-align:center;
-}
-
-.step{
-    background:#141414;
-    border:1px solid #252525;
-    border-radius:16px;
-    padding:30px;
-    width:220px;
-}
-
-.stats{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px;
-}
-
-.stat{
-    text-align:center;
-    background:#141414;
-    padding:25px;
-    border-radius:16px;
-}
-
-.number{
-    font-size:2rem;
-    color:#00d26a;
-    font-weight:bold;
-}
-
-.contact{
-    text-align:center;
-}
-
-footer{
-    border-top:1px solid #222;
-    padding:30px;
-    text-align:center;
-    color:#888;
-}
-
-@media(max-width:768px){
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-    .nav-links{
-        display:none;
-    }
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,sans-serif}
+body{background:#07110b;color:#fff}
+nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(7,17,11,.9);backdrop-filter:blur(12px);border-bottom:1px solid #173525}
+.nav-container{max-width:1300px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo img{height:58px}
+.nav-links{display:flex;gap:24px}
+.nav-links a{text-decoration:none;color:#c9d4cd}
+.nav-links a:hover{color:#00d26a}
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 8% 80px;background:radial-gradient(circle at center,#103820,#07110b)}
+.hero-wrap{max-width:1300px;width:100%;display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:center}
+.hero h1{font-size:4.5rem;line-height:1.05}
+.hero span{color:#00d26a}
+.hero p{margin:25px 0;color:#b6c2ba;font-size:1.15rem}
+.btn{padding:14px 24px;border-radius:12px;text-decoration:none;display:inline-block;margin-right:10px}
+.primary{background:#00c16e;color:#000;font-weight:700}
+.secondary{border:1px solid #29523d;color:#fff}
+.hero-card{background:#0f1d16;border:1px solid #21442f;border-radius:24px;padding:30px;text-align:center}
+.hero-card img{max-width:100%;border-radius:18px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:25px}
+.metric{background:#101a14;padding:18px;border-radius:14px;text-align:center;border:1px solid #1f3b2c}
+.metric h3{color:#00d26a}
+section{padding:90px 8%}
+.container{max-width:1300px;margin:auto}
+.title{text-align:center;font-size:2.6rem;margin-bottom:45px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#101913;border:1px solid #1e392b;padding:25px;border-radius:18px}
+.timeline{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.step{background:#101913;border:1px solid #1e392b;padding:20px;border-radius:18px;width:220px;text-align:center}
+footer{padding:40px;text-align:center;border-top:1px solid #1e392b;color:#9ab1a2}
+@media(max-width:900px){
+.hero-wrap{grid-template-columns:1fr}
+.hero h1{font-size:3rem}
+.metrics{grid-template-columns:repeat(2,1fr)}
+.nav-links{display:none}
 }
 </style>
 </head>
-
 <body>
 
 <nav>
 <div class="nav-container">
-<div class="logo">Safai<span>Tech</span></div>
-
+<div class="logo"><img src="logo.png" alt="SafaiTech"></div>
 <div class="nav-links">
 <a href="#about">About</a>
-<a href="#solution">Solution</a>
 <a href="#features">Features</a>
 <a href="#impact">Impact</a>
+<a href="#roadmap">Roadmap</a>
 <a href="#contact">Contact</a>
 </div>
 </div>
 </nav>
 
 <section class="hero">
+<div class="hero-wrap">
+<div>
+<h1>Smart Waste Management for <span>Smarter Cities</span></h1>
+<p>AI-powered SmartBins with rewards, analytics, solar power and real-time monitoring for municipalities, universities, tourism hubs and smart city projects.</p>
+<a class="btn primary" href="mailto:safaitechh@gmail.com?subject=Request%20Pilot%20Deployment">Request Pilot Deployment</a>
+<a class="btn secondary" href="mailto:safaitechh@gmail.com?subject=Partnership%20Inquiry">Partner With Us</a>
 
-<div class="hero-content">
-
-<h1>Transforming <span>Waste</span> Into Value</h1>
-
-<p>
-AI-powered SmartBins designed for smart cities, tourism hubs,
-educational institutions, and public infrastructure.
-</p>
-
-<a href="mailto:safaitech@gmail.com?subject=Pilot%20Deployment%20Inquiry" class="btn primary" style="text-decoration:none;display:inline-block;">🚀 Request Pilot Deployment</a>
-<a href="mailto:safaitech@gmail.com?subject=Partnership%20Inquiry" class="btn secondary" style="text-decoration:none;display:inline-block;">🤝 Partner With Us</a>
-
+<div class="metrics">
+<div class="metric"><h3 class="counter" data-target="18">0</h3><p>Projected SmartBins</p></div>
+<div class="metric"><h3 class="counter" data-target="3600">0</h3><p>Projected kg Recycled</p></div>
+<div class="metric"><h3 class="counter" data-target="12">0</h3><p>Lakh+ Projected Revenue</p></div>
+<div class="metric"><h3 class="counter" data-target="18">0</h3><p>Projected Locations</p></div>
+</div>
 </div>
 
+<div class="hero-card">
+<img src="logo.png" alt="SafaiTech Logo">
+<h2 style="margin-top:20px;color:#00d26a">SafaiTech Platform</h2>
+<p style="color:#b6c2ba">Solar Powered • AI Waste Detection • Cloud Dashboard</p>
+<p style="margin-top:18px;color:#8fa596;text-align:center;font-size:.95rem">* Projected annual impact based on planned deployment of 18 SmartBins across 18 locations.</p></div>
+</div>
 </section>
 
 <section id="about">
-
 <div class="container">
-
-<h2 class="section-title">About SafaiTech</h2>
-
-<div class="card">
-
-<p>
-SafaiTech is a smart-city technology company focused on modernizing waste management through AI, IoT, renewable energy, and data-driven infrastructure.
-
-Our mission is to make recycling rewarding, sustainable, and scalable while helping governments and organizations create cleaner urban environments.
-</p>
-
+<h2 class="title">Who We Serve</h2>
+<div class="grid">
+<div class="card">🏛 Municipal Corporations</div>
+<div class="card">🏫 Universities & Campuses</div>
+<div class="card">✈ Airports & Tourism Hubs</div>
+<div class="card">🏢 Corporate Parks</div>
 </div>
-
 </div>
-
-</section>
-
-<section id="solution">
-
-<div class="container">
-
-<h2 class="section-title">How It Works</h2>
-
-<div class="process">
-
-<div class="step">
-<h3>Login</h3>
-<p>RFID, QR Code or Mobile Login</p>
-</div>
-
-<div class="step">
-<h3>Deposit</h3>
-<p>Waste deposited into SmartBin</p>
-</div>
-
-<div class="step">
-<h3>AI Analysis</h3>
-<p>Waste classified automatically</p>
-</div>
-
-<div class="step">
-<h3>Rewards</h3>
-<p>Points credited instantly</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
 <section id="features">
-
 <div class="container">
-
-<h2 class="section-title">SmartBin Features</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>AI Waste Detection</h3>
-<p>Automatic identification and categorization of waste materials.</p>
+<h2 class="title">SmartBin Features</h2>
+<div class="grid">
+<div class="card">AI Waste Detection</div>
+<div class="card">RFID & QR Login</div>
+<div class="card">Reward Points Engine</div>
+<div class="card">Solar Powered Operation</div>
+<div class="card">Cloud Dashboard</div>
+<div class="card">Carbon Impact Tracking</div>
 </div>
-
-<div class="card">
-<h3>RFID & QR Login</h3>
-<p>Seamless user authentication and rewards tracking.</p>
 </div>
-
-<div class="card">
-<h3>Solar Powered</h3>
-<p>Renewable energy integration for sustainable operation.</p>
-</div>
-
-<div class="card">
-<h3>Cloud Dashboard</h3>
-<p>Real-time monitoring and analytics for municipalities.</p>
-</div>
-
-<div class="card">
-<h3>Smart Alerts</h3>
-<p>Fill-level monitoring and collection notifications.</p>
-</div>
-
-<div class="card">
-<h3>Carbon Tracking</h3>
-<p>Measure environmental impact and sustainability metrics.</p>
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-<section id="impact">
 
-<div class="container">
 
-<h2 class="section-title">Impact</h2>
 
-<div class="stats">
-
-<div class="stat">
-<div class="number" data-target="5000">0</div>
-<p>kg Recycled</p>
-</div>
-
-<div class="stat">
-<div class="number" data-target="1200">0</div>
-<p>kg CO₂ Saved</p>
-</div>
-
-<div class="stat">
-<div class="number" data-target="250">0</div>
-<p>kWh Solar Generated</p>
-</div>
-
-<div class="stat">
-<div class="number" data-target="100">0</div>
-<p>Active SmartBins</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <section id="contact">
-
-<div class="container contact">
-
-<h2 class="section-title">Let's Build Smarter Cities</h2>
-
-<p style="color:#aaa;margin-bottom:25px;">
-Interested in pilot deployments, partnerships, or demonstrations?
-</p>
-
-<a href="mailto:safaitech@gmail.com?subject=SafaiTech%20Inquiry" class="btn primary" style="text-decoration:none;display:inline-block;">📞 Contact SafaiTech</a>
-
+<div class="container" style="text-align:center">
+<h2 class="title">Let's Build Cleaner Cities</h2>
+<a class="btn primary" href="mailto:safaitechh@gmail.com?subject=SafaiTech%20Inquiry">Schedule Demonstration</a>
 </div>
-
 </section>
 
 <footer>
-© 2026 SafaiTech. Transforming Waste Into Value.
+<img src="logo.png" style="height:60px"><br><br>
+© 2026 SafaiTech • Smart Waste. Cleaner Future.
 </footer>
-
 <script>
-
-const counters=document.querySelectorAll('.number');
-
-const observer=new IntersectionObserver(entries=>{
-
+const counters=document.querySelectorAll('.counter');
+const obs=new IntersectionObserver(entries=>{
 entries.forEach(entry=>{
-
 if(entry.isIntersecting){
-
-const target=+entry.target.dataset.target;
-
+let target=+entry.target.dataset.target;
 let count=0;
-
 const update=()=>{
-
 count+=Math.ceil(target/80);
-
-if(count<target){
-entry.target.innerText=count;
-requestAnimationFrame(update);
-}
-else{
-entry.target.innerText=target;
-}
-
+if(count<target){entry.target.textContent=count;requestAnimationFrame(update);}
+else{entry.target.textContent=target+'+';}
 };
-
 update();
-
 }
-
 });
-
 });
-
-counters.forEach(counter=>observer.observe(counter));
-
-</script>
-
-</body>
+counters.forEach(c=>obs.observe(c));
+</script></body>
 </html>
